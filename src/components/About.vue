@@ -56,7 +56,7 @@ h2 {
     'icon job'
     'icon sns';
   height: 160px;
-  margin: 0 auto;
+  margin: 60px auto 0;
   border-bottom: 2px solid rgba(255, 255, 255, 0.19);
 
   > img {

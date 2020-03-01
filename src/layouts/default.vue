@@ -11,7 +11,7 @@ html {
 
 body {
   position: relative;
-  min-height: 300vh;
+  min-height: 100vh;
   max-width: 414px;
   margin: 0 auto;
   z-index: 0;
