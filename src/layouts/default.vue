@@ -1,8 +1,30 @@
 <template>
   <main class="main">
     <nuxt />
+    <template v-if="isLoading">
+      <transition>
+        <div class="loading">
+          <!-- <h1>読込中</h1> -->
+        </div>
+      </transition>
+    </template>
   </main>
 </template>
+<script>
+export default {
+  data() {
+    return {
+      isLoading: true
+    }
+  },
+
+  mounted() {
+    window.addEventListener('load', () => {
+      this.isLoading = false
+    })
+  }
+}
+</script>
 
 <style lang="scss">
 html {
@@ -10,6 +32,10 @@ html {
 }
 
 body {
+  margin: 0;
+}
+
+main {
   position: relative;
   min-height: 100vh;
   max-width: 414px;
@@ -17,7 +43,7 @@ body {
   z-index: 0;
 }
 
-body::before {
+main::before {
   content: '';
   display: block;
   position: fixed;
@@ -31,5 +57,34 @@ body::before {
   background-repeat: no-repeat;
   background-size: cover;
   -webkit-background-size: cover;
+}
+
+.loading {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  z-index: 9999;
+
+  > h1 {
+    color: white;
+    font-size: 50px;
+    text-align: center;
+  }
+}
+.v-leave-active,
+.v-enter-active {
+  transition: opacity 0.7s ease-out;
+}
+
+.v-enter,
+.v-leave-to {
+  opacity: 0;
+}
+
+.v-enter-to,
+.vleave {
+  opacity: 1;
 }
 </style>
