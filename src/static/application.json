@@ -3,12 +3,12 @@
     {
       "title": "HR系webサービス",
       "skills": ["PHP", "Laravel", "Vue", "Nuxt", "AWS", "TypeScript", "MySql"],
-      "description": "リードエンジニアとしてバックエンド、フロントエンドの設計から実装までメインで担当その他進捗管理などのマネジメントも"
+      "description": "リードエンジニアとしてバックエンド、フロントエンドの設計から実装までメインで担当、その他進捗管理などのマネジメントも行う"
     },
     {
       "title": "相談系webサービス ",
       "skills": ["Vue", "Nuxt", "TypeScript", "Firebase", "react", "rails"],
-      "description": "リードエンジニアとして設計から実装までメインで担当進捗管理などのマネジメントも"
+      "description": "リードエンジニアとして設計から実装までメインで担当、その他進捗管理などのマネジメントも行う"
     },
     {
       "title": "医療系webサービス",
