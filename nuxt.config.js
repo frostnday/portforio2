@@ -71,7 +71,8 @@ export default {
   modules: [
     // Doc: https://github.com/nuxt-community/dotenv-module
     '@nuxtjs/dotenv',
-    '@nuxtjs/style-resources'
+    '@nuxtjs/style-resources',
+    '@nuxtjs/pwa'
   ],
 
   styleResources: {
