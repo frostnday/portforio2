@@ -5,17 +5,33 @@ export default {
    ** Headers of the page
    */
   head: {
-    title: process.env.npm_package_name || '',
+    title: 'Tomoya Moriyama',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       {
         hid: 'description',
         name: 'description',
-        content: process.env.npm_package_description || ''
+        content: 'フリーランスエンジニア森山智哉のportforioサイトです。'
+      },
+      {
+        name: 'og:url',
+        content: 'https://frostndays.me'
+      },
+      {
+        name: 'og:title',
+        content: 'Tomoya Moriyama'
+      },
+      {
+        name: 'og:type',
+        content: 'website'
+      },
+      {
+        name: 'og:type',
+        content: 'フリーランスエンジニア森山智哉のportforioサイトです。'
       }
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    // link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
     script: [
       {
         innerHTML: `(function(d) {
