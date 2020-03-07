@@ -1,5 +1,5 @@
 <template>
-  <div class="top">
+  <div class="layout">
     <h1>
       Tomoya <br />
       Moriyama
@@ -26,7 +26,7 @@ h1 {
   padding: 139px 0 0 34px;
   @include title-style;
 }
-.top {
+.layout {
   position: relative;
   max-width: 414px;
   height: 100vh;

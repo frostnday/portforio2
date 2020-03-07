@@ -1,7 +1,7 @@
 <template>
-  <div id="work" class="work">
-    <h2>work</h2>
-    <section class="carousel">
+  <section id="work" class="layout">
+    <h2 class="title">work</h2>
+    <div class="carousel">
       <carousel
         :per-page="1"
         :controls="true"
@@ -18,12 +18,13 @@
           />
         </slide>
       </carousel>
-    </section>
-  </div>
+    </div>
+  </section>
 </template>
 <script>
 import Card from '@/components/Card'
 import json from '@/static/application.json'
+
 export default {
   components: {
     Card
@@ -36,19 +37,16 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-h2 {
+.title {
   @include title-style;
   text-align: center;
+  margin-bottom: 60px;
 }
 
-.work {
+.layout {
   height: 100vh;
   padding-top: 20px;
   margin: 0 auto;
-}
-
-.carousel {
-  margin-top: 60px;
 }
 
 .VueCarousel-slide {

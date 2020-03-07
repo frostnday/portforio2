@@ -1,6 +1,6 @@
 <template>
-  <div id="about" class="about">
-    <h2>about</h2>
+  <section id="about" class="layout">
+    <h2 class="title">about</h2>
     <div class="profile">
       <img src="/images/icon.png" />
       <h3 class="name">名前：森山智哉</h3>
@@ -34,15 +34,16 @@
         </p>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 <style lang="scss" scoped>
-h2 {
+.title {
   @include title-style;
   text-align: center;
+  margin-bottom: 60px;
 }
 
-.about {
+.layout {
   width: 90%;
   margin: 0 auto;
 }
@@ -56,7 +57,7 @@ h2 {
     'icon job'
     'icon sns';
   height: 160px;
-  margin: 60px auto 0;
+  margin: 0 auto;
   border-bottom: 2px solid rgba(255, 255, 255, 0.19);
 
   > img {

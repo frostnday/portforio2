@@ -31,23 +31,14 @@ export default {
 </script>
 <style lang="scss" scoped>
 .card {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 340px;
+  @include card;
+
   height: 338px;
   margin: 0 10px;
-  background: rgba(2, 16, 65, 0.45);
-  box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.25);
-  border-radius: 20px;
   font-family: $default-font;
 
   .inner {
-    width: 306px;
-    height: 304px;
     padding: 25px 20px 20px;
-    background: rgba(0, 0, 0, 0.24);
-    border-radius: 20px;
   }
 }
 
