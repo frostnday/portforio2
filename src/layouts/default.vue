@@ -75,7 +75,7 @@ main::before {
   z-index: -1;
   max-width: 414px;
   width: 100%;
-  height: 100vh;
+  @include pagevh;
   background: url('/images/back.png');
   background-position: center center;
   background-repeat: no-repeat;
@@ -86,7 +86,7 @@ main::before {
   position: fixed;
   top: 0;
   max-width: 414px;
-  height: 100vh;
+  @include pagevh;
   opacity: 0.35;
   z-index: z(Bottom);
 }
@@ -94,7 +94,7 @@ main::before {
   position: fixed;
   top: 0;
   width: 100vw;
-  height: 100vh;
+  @include pagevh;
   background-color: black;
   z-index: 9999;
 

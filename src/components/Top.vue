@@ -29,7 +29,7 @@ h1 {
 .layout {
   position: relative;
   max-width: 414px;
-  height: 100vh;
+  @include pagevh;
   z-index: z(LowerMiddle);
 }
 .arrow {

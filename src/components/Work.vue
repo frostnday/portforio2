@@ -44,7 +44,7 @@ export default {
 
 .layout {
   position: relative;
-  height: 100vh;
+  @include pagevh;
   padding-top: 20px;
   margin: 0 auto;
   z-index: z(LowerMiddle);

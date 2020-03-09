@@ -88,7 +88,7 @@ export default {}
 
 .layout {
   position: relative;
-  height: 100vh;
+  @include pagevh;
   margin: 0 auto;
   z-index: z(LowerMiddle);
 }
