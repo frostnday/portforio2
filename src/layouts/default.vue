@@ -11,6 +11,7 @@
   </main>
 </template>
 <script>
+const particlesJS = require('particlesjs')
 export default {
   data() {
     return {
@@ -22,6 +23,20 @@ export default {
     window.addEventListener('load', () => {
       this.isLoading = false
     })
+    window.onload = function() {
+      particlesJS.init({
+        selector: '.background',
+        maxParticles: 40,
+        sizeVariations: 30,
+        speed: 0.3,
+        color: [
+          '#0bd',
+          'rgba(0,187,221,.5)',
+          'rgba(0,187,221,.2)',
+          'rgba(53,85,255,.4)'
+        ]
+      })
+    }
   }
 }
 </script>

@@ -5460,6 +5460,10 @@ parseurl@~1.3.3:
   version "1.3.3"
   resolved "https://registry.yarnpkg.com/parseurl/-/parseurl-1.3.3.tgz#9da19e7bee8d12dff0513ed5b76957793bc2e8d4"
 
+particlesjs@^2.2.3:
+  version "2.2.3"
+  resolved "https://registry.yarnpkg.com/particlesjs/-/particlesjs-2.2.3.tgz#4d213ca740679fc1ccc772e8d864b884a091f37e"
+
 pascalcase@^0.1.1:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/pascalcase/-/pascalcase-0.1.1.tgz#b363e55e8006ca6fe21784d2db22bd15d7917f14"

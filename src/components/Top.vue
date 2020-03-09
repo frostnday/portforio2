@@ -1,5 +1,6 @@
 <template>
   <div class="layout">
+    <canvas class="background" />
     <h1>
       Tomoya <br />
       Moriyama
@@ -26,10 +27,17 @@ h1 {
   padding: 139px 0 0 34px;
   @include title-style;
 }
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: z(Bottom);
+}
 .layout {
   position: relative;
   max-width: 414px;
   height: 100vh;
+  z-index: z(LowerMiddle);
 }
 .arrow {
   display: flex;
@@ -37,5 +45,6 @@ h1 {
   position: absolute;
   bottom: 10%;
   width: 100%;
+  z-index: z(Middle);
 }
 </style>
