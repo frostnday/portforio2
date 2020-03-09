@@ -1,6 +1,5 @@
 <template>
   <div class="layout">
-    <canvas class="background" />
     <h1>
       Tomoya <br />
       Moriyama
@@ -26,12 +25,6 @@ h1 {
   margin: 0;
   padding: 139px 0 0 34px;
   @include title-style;
-}
-.background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: z(Bottom);
 }
 .layout {
   position: relative;

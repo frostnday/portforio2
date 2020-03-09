@@ -87,8 +87,10 @@ export default {}
 }
 
 .layout {
+  position: relative;
   height: 100vh;
   margin: 0 auto;
+  z-index: z(LowerMiddle);
 }
 
 .card {
@@ -126,7 +128,7 @@ export default {}
     height: 5px;
     border-radius: 10px;
     background-color: rgba(64, 64, 64, 0.66);
-
+    z-index: z(LowerMiddle);
     .rate {
       height: 5px;
       border-radius: 10px;

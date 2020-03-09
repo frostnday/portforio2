@@ -6,7 +6,6 @@
         :per-page="1"
         :controls="true"
         :pagination-size="20"
-        :pagination-padding="15"
         :pagination-color="'#3A4C87'"
         :pagination-active-color="'#C8CBD6'"
       >
@@ -44,9 +43,11 @@ export default {
 }
 
 .layout {
+  position: relative;
   height: 100vh;
   padding-top: 20px;
   margin: 0 auto;
+  z-index: z(LowerMiddle);
 }
 
 .VueCarousel-slide {

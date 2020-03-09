@@ -1,3 +1,14 @@
 @import './variable.scss';
 @import './functions.scss';
 @import './mixins.scss';
+
+.VueCarousel-dot {
+  border: 2px solid rgb(200, 203, 214) !important;
+  padding: 0 !important;
+  margin: 15px !important;
+  background-color: rgba(0, 0, 0, 0) !important;
+
+  &--active {
+    background-color: rgb(200, 203, 214) !important;
+  }
+}

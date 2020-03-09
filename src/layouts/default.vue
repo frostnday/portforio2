@@ -1,11 +1,10 @@
 <template>
   <main class="main">
+    <canvas class="background" />
     <nuxt />
     <template v-if="isLoading">
       <transition>
-        <div class="loading">
-          <!-- <h1>読込中</h1> -->
-        </div>
+        <div class="loading" />
       </transition>
     </template>
   </main>
@@ -23,12 +22,14 @@ export default {
     window.addEventListener('load', () => {
       this.isLoading = false
     })
-    window.onload = function() {
+
+    // 泡のアニメーションload
+    window.onload = () => {
       particlesJS.init({
         selector: '.background',
-        maxParticles: 40,
-        sizeVariations: 30,
-        speed: 0.3,
+        maxParticles: 50,
+        sizeVariations: 40,
+        speed: 0.4,
         color: [
           '#0bd',
           'rgba(0,187,221,.5)',
@@ -73,7 +74,14 @@ main::before {
   background-size: cover;
   -webkit-background-size: cover;
 }
-
+.background {
+  position: fixed;
+  top: 0;
+  max-width: 414px;
+  height: 100vh;
+  opacity: 0.35;
+  z-index: z(Bottom);
+}
 .loading {
   position: fixed;
   top: 0;

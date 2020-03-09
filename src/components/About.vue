@@ -44,8 +44,10 @@
 }
 
 .layout {
+  position: relative;
   width: 90%;
   margin: 0 auto;
+  z-index: z(LowerMiddle);
 }
 
 .profile {
@@ -59,6 +61,7 @@
   height: 160px;
   margin: 0 auto;
   border-bottom: 2px solid rgba(255, 255, 255, 0.19);
+  z-index: z(Middle);
 
   > img {
     grid-area: icon;
