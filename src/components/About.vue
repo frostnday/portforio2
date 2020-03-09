@@ -71,18 +71,31 @@
     grid-area: name;
     margin-left: 20px;
     @include text-style(16px);
+    @include se {
+      font-size: 16px;
+      letter-spacing: 1.1px;
+    }
   }
 
   .job {
     grid-area: job;
     margin-left: 20px;
     @include text-style(16px);
+    @include se {
+      font-size: 16px;
+      letter-spacing: 1.1px;
+    }
   }
 
   .sns {
     grid-area: sns;
     margin-top: 10px;
     margin-left: 50%;
+
+    @include se {
+      margin-top: 25px;
+      margin-left: 30%;
+    }
 
     .icon {
       width: 50px;
@@ -119,10 +132,18 @@
 }
 .label {
   @include text-style(16px);
+  @include se {
+    font-size: 16px;
+    letter-spacing: 1.1px;
+  }
   color: rgba(255, 255, 255, 0.94);
 }
 
 .description {
   @include text-style(14px);
+  @include se {
+    font-size: 16px;
+    letter-spacing: 1.1px;
+  }
 }
 </style>

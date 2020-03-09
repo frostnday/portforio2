@@ -121,6 +121,9 @@ export default {}
     width: 40%;
     margin: 0;
     @include text-style(11px);
+    @include se {
+      font-size: 9px;
+    }
   }
 
   .level {
