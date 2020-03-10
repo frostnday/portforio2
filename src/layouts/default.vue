@@ -120,6 +120,7 @@ footer {
     line-height: 19px;
     letter-spacing: 0.7px;
     text-align: center;
+    font-family: Open Sans;
     color: rgba(255, 255, 255, 0.63);
   }
 }
