@@ -44,10 +44,8 @@
 }
 
 .layout {
-  position: relative;
+  @include defaultLayout;
   width: 90%;
-  margin: 0 auto;
-  z-index: z(LowerMiddle);
 }
 
 .profile {

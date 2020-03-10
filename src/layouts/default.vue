@@ -7,6 +7,9 @@
         <div class="loading" />
       </transition>
     </template>
+    <footer>
+      <p class="copy"><small>&copy; 2020 Tomoya Moriyama</small></p>
+    </footer>
   </main>
 </template>
 <script>
@@ -104,6 +107,23 @@ main::before {
     text-align: center;
   }
 }
+
+footer {
+  width: 100%;
+  height: 19px;
+  bottom: 0;
+  background: rgba(0, 10, 44, 0.58);
+
+  .copy {
+    margin: 0;
+    font-size: 8px;
+    line-height: 19px;
+    letter-spacing: 0.7px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.63);
+  }
+}
+
 .v-leave-active,
 .v-enter-active {
   transition: opacity 0.7s ease-out;

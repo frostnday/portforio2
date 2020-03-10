@@ -6,6 +6,7 @@
   color: rgba(255, 255, 255, 0.71);
   text-shadow: 0px 4px 4px rgba(255, 255, 255, 0.25);
   font-family: $default-font;
+
   @include se {
     font-size: 32px;
     line-height: 55px;
@@ -38,6 +39,13 @@
     background: rgba(0, 0, 0, 0.24);
     border-radius: 20px;
   }
+}
+
+@mixin defaultLayout {
+  position: relative;
+  margin: 0 auto;
+  padding-top: 20px;
+  z-index: z(LowerMiddle);
 }
 
 @mixin se {

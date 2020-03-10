@@ -43,11 +43,7 @@ export default {
 }
 
 .layout {
-  position: relative;
-  @include pagevh;
-  padding-top: 20px;
-  margin: 0 auto;
-  z-index: z(LowerMiddle);
+  @include defaultLayout;
 }
 
 .VueCarousel-slide {
