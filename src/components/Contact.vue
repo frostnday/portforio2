@@ -83,13 +83,14 @@ export default {
 input,
 textarea {
   width: 100%;
-  height: 35px;
+  height: 40px;
   margin: 5px 0 10px;
   padding: 3px 10px;
-  background: rgba(8, 7, 51, 0.43);
+  background: rgba(8, 7, 51, 0.6);
   box-shadow: inset 0px 4px 8px rgba(0, 0, 0, 0.25);
   border-radius: 8px;
-  font-size: 12px;
+  font-size: 14px;
+  font-family: Open Sans;
   color: rgba(255, 255, 255, 0.5);
 }
 .body {
