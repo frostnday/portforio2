@@ -1,10 +1,21 @@
 <template>
   <section id="contact" class="layout">
     <h2 class="title">contact</h2>
+    <iframe
+      id="dummyIframe"
+      name="dummyIframe"
+      height="0"
+      width="0"
+      frameborder="0"
+      scrolling="no"
+      class="dummyframe"
+    />
     <form
       id="contactForm"
       class="form"
       method="post"
+      action="https://script.google.com/macros/s/AKfycbwm4TVztCDUAQIAzg8l0NH7D0z0zgGMSo2CYNUU2C0Cdjquisw7/exec"
+      autocomplete="off"
       target="dummyIframe"
       @submit.prevent="onSubmit"
     >
@@ -16,15 +27,14 @@
 
       <label class="label">お問い合わせ内容</label>
       <textarea v-model="body" name="body" class="body" />
-      <iframe name="dummyIframe" class="dummyframe" />
-      <button class="button">send</button>
+      <button type="submit" class="button">send</button>
     </form>
   </section>
 </template>
 
 <script>
-const ActionUrl =
-  'https://script.google.com/macros/s/AKfycbwm4TVztCDUAQIAzg8l0NH7D0z0zgGMSo2CYNUU2C0Cdjquisw7/exec'
+// const ActionUrl =
+//   'https://script.google.com/macros/s/AKfycbwm4TVztCDUAQIAzg8l0NH7D0z0zgGMSo2CYNUU2C0Cdjquisw7/exec'
 export default {
   data() {
     return {
@@ -43,17 +53,17 @@ export default {
         f.email.value = this.email
         f.username.avlue = this.username
         f.body.value = this.body
+        setInterval(this.clear(), 3000)
 
-        f.action = ActionUrl
         f.submit()
-
-        // クリアする
-        this.email = ''
-        this.username = ''
-        this.body = ''
-
-        window.confirm('お問い合わせが完了しました。')
+        return true
       }
+    },
+    clear() {
+      window.alert('お問い合わせが完了しました。')
+      this.email = ''
+      this.username = ''
+      this.body = ''
     }
   }
 }

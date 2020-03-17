@@ -36,7 +36,7 @@ h1 {
   display: flex;
   justify-content: center;
   position: absolute;
-  bottom: 10%;
+  top: 80%;
   width: 100%;
   z-index: z(Middle);
 }
