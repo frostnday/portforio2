@@ -1,20 +1,10 @@
 <template>
   <section id="contact" class="layout">
     <h2 class="title">contact</h2>
-    <iframe
-      id="dummyIframe"
-      name="dummyIframe"
-      height="0"
-      width="0"
-      frameborder="0"
-      scrolling="no"
-      class="dummyframe"
-    />
     <form
       id="contactForm"
       class="form"
       method="post"
-      action="https://script.google.com/macros/s/AKfycbwm4TVztCDUAQIAzg8l0NH7D0z0zgGMSo2CYNUU2C0Cdjquisw7/exec"
       autocomplete="off"
       target="dummyIframe"
       @submit.prevent="onSubmit"
@@ -26,44 +16,42 @@
       <input v-model="username" name="username" class="username" type="text" />
 
       <label class="label">お問い合わせ内容</label>
-      <textarea v-model="body" name="body" class="body" />
+      <textarea v-model="message" name="body" class="body" />
       <button type="submit" class="button">send</button>
     </form>
   </section>
 </template>
 
 <script>
-// const ActionUrl =
-//   'https://script.google.com/macros/s/AKfycbwm4TVztCDUAQIAzg8l0NH7D0z0zgGMSo2CYNUU2C0Cdjquisw7/exec'
+import axios from 'axios'
+const baseUrl = 'https://us-central1-frostndays.cloudfunctions.net/api'
+
 export default {
   data() {
     return {
       email: '',
       username: '',
-      body: ''
+      message: ''
     }
   },
 
   methods: {
-    onSubmit() {
-      if (this.email && this.username && this.body) {
-        const f = document.getElementById('contactForm')
-
-        // メールアドレスが入力されていたらForm送信を行う
-        f.email.value = this.email
-        f.username.avlue = this.username
-        f.body.value = this.body
-        setInterval(this.clear(), 3000)
-
-        f.submit()
-        return true
+    async onSubmit() {
+      if (this.email && this.username && this.message) {
+        const params = {
+          email: this.email,
+          username: this.username,
+          message: this.message
+        }
+        await axios.post(`${baseUrl}/contact`, params)
+        this.clear()
       }
     },
     clear() {
       window.alert('お問い合わせが完了しました。')
       this.email = ''
       this.username = ''
-      this.body = ''
+      this.message = ''
     }
   }
 }
