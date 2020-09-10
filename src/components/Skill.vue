@@ -8,7 +8,7 @@
           <li class="skill">
             <h3 class="name">PHP</h3>
             <div class="level">
-              <div class="rate" style="width: 100%;" />
+              <div class="rate" style="width: 95%;" />
             </div>
           </li>
           <li class="skill">
@@ -26,31 +26,31 @@
           <li class="skill">
             <h3 class="name">Vue</h3>
             <div class="level">
-              <div class="rate" style="width: 100%;" />
+              <div class="rate" style="width: 95%;" />
             </div>
           </li>
           <li class="skill">
             <h3 class="name">React</h3>
             <div class="level">
-              <div class="rate" style="width: 30%;" />
+              <div class="rate" style="width: 80%;" />
             </div>
           </li>
           <li class="skill">
             <h3 class="name">Angular</h3>
             <div class="level">
-              <div class="rate" style="width: 50%;" />
+              <div class="rate" style="width: 40%;" />
             </div>
           </li>
           <li class="skill">
             <h3 class="name">Laravel</h3>
             <div class="level">
-              <div class="rate" style="width: 100%;" />
+              <div class="rate" style="width: 98%;" />
             </div>
           </li>
           <li class="skill">
             <h3 class="name">Nuxt</h3>
             <div class="level">
-              <div class="rate" style="width: 100%;" />
+              <div class="rate" style="width: 98%;" />
             </div>
           </li>
           <li class="skill">
