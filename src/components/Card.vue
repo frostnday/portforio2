@@ -34,7 +34,7 @@ export default {
   @include card;
 
   height: 338px;
-  margin: 0 10px;
+  margin: 0 auto 30px;
   font-family: $default-font;
 
   .inner {
