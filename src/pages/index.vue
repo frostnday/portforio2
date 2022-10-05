@@ -1,6 +1,5 @@
 <template>
   <div class="base">
-    <Top />
     <About />
     <Work />
     <Skill />
